@@ -33,5 +33,3 @@ percent_scarred <- function(x, injury_event=FALSE){
   return(out)
 }
 
-x=gtsr
-ss <- sample_depth(x)
