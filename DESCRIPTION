@@ -9,9 +9,7 @@ Description: slideRun is an extension of the burnr library, with added
     and modified functionality to accomodate dendro-avalanche research.
 License: GPL (>= 3)
 Depends: R (>= 3.4.3), 
-         burnr, 
-         ggplot2,
-         dplyr
+         burnr
 Encoding: UTF-8
 LazyData: true
 Imports:
