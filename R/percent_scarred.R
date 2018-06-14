@@ -6,10 +6,6 @@
 #' @return A data.frame with four columns: \code{Year}, \code{NumRec} with the number of recording trees,
 #' \code{NumScars} with the number of fire scars and/or events, and \code{PercScarred} with the proportion of scars/events.
 #'
-#' @examples
-#' data("pgm")
-#' percent_scarred(pgm)
-#'
 #' @export
 percent_scarred <- function(x, injury_event=FALSE){
   if(inherits(x, "avalanche") == TRUE){
