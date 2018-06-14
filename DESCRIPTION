@@ -2,12 +2,16 @@ Package: slideRun
 Type: Package
 Title: Analysis and graphics of tree-ring based avalanche research
 Version: 0.1.0
-Author@R: person("Chris", "Guiterman", role = c("cre", ctb")),
-Maintainer: person("Chris", "Guiterman", email =
-    "chguiterman@email.arizona.edu")
+Author@R: person("Chris", "Guiterman", role = c("cre", ctb"))
+Author: Chris Guiterman [aut, cre]
+Maintainer: Chris Guiterman <chguiterman@email.arizona.edu>
 Description: slideRun is an extension of the burnr library, with added
     and modified functionality to accomodate dendro-avalanche research.
 License: GPL (>= 3)
+Depends: R (>= 3.4.3), 
+         burnr, 
+         ggplot2,
+         dplyr
 Encoding: UTF-8
 LazyData: true
 Imports:
