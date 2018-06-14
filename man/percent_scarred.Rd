@@ -18,8 +18,3 @@ A data.frame with four columns: \code{Year}, \code{NumRec} with the number of re
 \description{
 Percent scarred time series
 }
-\examples{
-data("pgm")
-percent_scarred(pgm)
-
-}
