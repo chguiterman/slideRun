@@ -21,4 +21,3 @@ An \code{avalanche} and \code{fhx} object
 \description{
 Generate a class "avalanche" object
 }
-
