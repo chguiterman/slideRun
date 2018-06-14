@@ -9,7 +9,7 @@
 #'
 avalanche <- function(series, year, rec_type, conf) {
   # Constructor for `avalanche` objects.
-  obj <- fhx(series=series, year=year, rec_type=rec_type)
+  obj <- burnr::fhx(series=series, year=year, rec_type=rec_type)
   obj$conf <- conf
   class(obj) <- c('avalanche', class(obj))
   return(obj)
