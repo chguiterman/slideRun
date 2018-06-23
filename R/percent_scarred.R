@@ -13,7 +13,7 @@ percent_scarred <- function(x, injury_event=FALSE){
     names(rec_count) <- c("recording", "freq")
   }
   else  {
-    series_rec <- plyr::ddply(x, "series", burnr::find_recording, injury_event=TRUE)
+    series_rec <- plyr::ddply(x, "series", burnr:::find_recording, injury_event=TRUE)
     rec_count <- plyr::count(series_rec, "recording")
   }
   series_fs <- x[grepl('_fs', x$rec_type), ]
