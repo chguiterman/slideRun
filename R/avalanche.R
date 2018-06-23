@@ -8,9 +8,9 @@
 #' @return An \code{avalanche} and \code{fhx} object
 #'
 avalanche <- function(series, year, rec_type, conf) {
-  # Constructor for `avalanche` objects.
-  obj <- burnr::fhx(series=series, year=year, rec_type=rec_type)
-  obj$conf <- conf
-  class(obj) <- c('avalanche', class(obj))
-  return(obj)
+  # Constructor for `avalanche` objects. Copies burnr::fhx()
+  rec_type <- burnr::make_rec_type(rec_type)
+  ringsdf = data.frame(year = year, series = series, rec_type = rec_type, conf = conf)
+  class(ringsdf) <- c('avalanche', 'fhx', 'data.frame')
+  ringsdf
 }
