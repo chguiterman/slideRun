@@ -13,8 +13,10 @@ Suggests:
     testthat,
     knitr,
     rmarkdown
+Depends:
+    burnr
 Imports:
-    burnr,
+    dplyr,
     MASS,
     stats,
     ggplot2,
