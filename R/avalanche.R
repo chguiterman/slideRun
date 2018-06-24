@@ -7,6 +7,7 @@
 #'
 #' @return An \code{avalanche} and \code{fhx} object
 #'
+#' @export
 avalanche <- function(series, year, rec_type, conf) {
   # Constructor for `avalanche` objects. Copies burnr::fhx()
   rec_type <- burnr::make_rec_type(rec_type)
